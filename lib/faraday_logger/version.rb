@@ -1,0 +1,3 @@
+module FaradayLogger
+  VERSION = "0.1.0"
+end
