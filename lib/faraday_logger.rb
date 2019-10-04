@@ -1,7 +1,7 @@
 require "faraday_logger/version"
 
 module FaradayLogger
-  class DebugPrint < Faraday::Middleware
+  class DebugPrint < ::Faraday::Response::Logger
     def on_complete env
       info('Status') { env.status.to_s + ' ' + env.url.to_s }
 
